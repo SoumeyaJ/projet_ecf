@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ecf.css">
+    <title>Istanbul</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+        <div class="container">
+            <a href="ecf.html" class="navbar-brand"><strong><span>Mon voyage à Istanbul...
+                        <i class="fa fa-heart text-danger"></i></span></strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="histoire.html" class="nav-link">Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aventures.html" class="nav-link">Aventures</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="info_utiles.html" target="_blank"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Info Utiles </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="change.html" target="_blank">Monnaie d'Istanbul</a></li>
+                            <li><a class="dropdown-item" href="api.html" target="_blank">Météo Istanbul</a></li>
+                            <li><a class="dropdown-item" href="https://thebyzantiumhotel.com/" target="_blank">Où se
+                                    loger </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mentions_legales.html" class="nav-link">Mentions légales</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- fin Navbar -->
+
+    <section id="blocs" class="p-5 mt-0 bg-dark">
+        <div class="container">
+            <h2 class="justify-content-between mt-5 mb-5 text-light">Visiter <span class="text-warning">Istanbul</span> vous
+                tente ?
+                Alors découvrez les choses incontournables à faire dans
+                une ville remplie de lieux merveilleux !</h2>
+            <div class="accordion accordion-flush" id="bloc">
+
+                <!-- item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-1">
+                            <strong>1. Une croisière sur le Bosphore</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-1" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">Un voyage à Istanbul n’est pas complet sans une croisière sur le
+                            Bosphore. Cela offre non seulement un bel aperçu de la ville, mais les rives à la fois
+                            européenne et asiatique du célèbre chenal ont beaucoup à offrir : un grand nombre d’anciens
+                            palais et demeures s’y trouvent, ainsi que la Tour de Léandre.
+
+                            Concernant la durée de la croisière, vous avez le choix entre une visite courte (si vous
+                            êtes pressés) ou longue (sur une journée). L’été, la croisière au coucher du soleil est très
+                            demandée. Par conséquent, pensez à réserver à l’avance si vous souhaitez faire la croisière
+                            sur ce créneau horaire.!</div>
+
+                        <div id="carouselExampleControls-1" class="carousel slide m-auto" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/pixabay/croisiere1.jpg" alt="croisiére">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pixabay/croisiere2.jpg" alt="bateau croisiére">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pont_istanbul.jpg" alt="pont istanbul">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsedtex" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-2">
+                            <strong> 2. La Basilique Sainte-Sophie ou mosquée Aya Sofia</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-2" class="accordion-collapse collapse" data-bs-parent="#bloc">
+                        <div class="accordion-body text-start">L’histoire complètement folle de ce lieu l’a rendue
+                            célèbre dans le monde entier. Construite en tant qu’église au VIe siècle, elle devient
+                            ensuite une mosquée lorsque les Ottomans prennent le contrôle de la ville, au XVe siècle.
+
+                            Et c’est justement ce changement de religion qui lui a valu cette architecture absolument
+                            exceptionnelle. En effet, comme en témoignent le dôme et les minarets, Sainte-Sophie mélange
+                            donc des éléments typiques des églises chrétiennes et des mosquées.
+
+                            Aujourd’hui, cette merveille architecturale abrite un musée retraçant son histoire. La
+                            visite prend, en général, une heure. D’ailleurs, il est vivement conseillé d’opter pour une
+                            visite guidée, afin de profiter pleinement des histoires et des secrets du lieu de culte.
+                        </div>
+                        <div id="carouselExampleControls-2" class="carousel slide m-auto" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/pexels-fatih-turan-9814527.jpg" alt="mosquée Aya Sofia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/hagia-sofia-g4b5b9f087_640.jpg" alt="mosquée Aya Sofia">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/istanbul-g0511e6dec_640.jpg" alt="mosquée Aya Sofia">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 3 -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-3">
+                            <strong> 3. Le Palais de Topkapı</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-3" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">Si vous visiter un jour Istanbul, il sera difficile ne pas
+                            apercevoir les nombreux palais de la ville. Tous valent, certes, le détour, mais il en
+                            existe un qu’il ne faut manquer sous aucun prétexte : le palais de Topkapi.
+
+                            Ce palais (Topkapı Sarayı en turc) n’est nul autre que l’ancienne résidence principale des
+                            sultans. Les lieux ont ainsi vu défiler les différents souverains de l’Empire ottoman
+                            pendant près de 400 ans. Côte architecture, sous la dénomination de palais se cache en
+                            réalité un complexe de pavillons, tous bâtis autour de quatre cours verdoyantes.</div>
+                        <div id="carouselExampleControls-3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/pixabay/topkapi1.jpg" alt="Palais de Topkapi">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pixabay/topkapi2.jpg" alt="Palais de Topkapi">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pixabay/topkapi3.jpg" alt="Palais de Topkapi">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-4">
+                            <strong> 4. Le Grand Bazar</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-4" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">Il est bien évidemment impossible de visiter la première métropole
+                            turque sans faire un tour au Grand Bazar d’Istanbul.
+                            En plus d’être l’un des symboles de la ville, c’est aussi le plus grand marché couvert du
+                            monde.
+                            Et contrairement aux idées reçues, le Grand Bazar n’est pas un attrape-touristes. Les locaux
+                            y viennent également acheter leurs produits. Toutefois, cela ne veut pas dire que tous les
+                            étals sont remplis de produits authentiques. Des contrefaçons et produits de mauvaise
+                            qualité circulent et les prix affichés peuvent être excessifs.
+
+                            Il faut donc s’apprêter à l’exercice de la négociation. Rassurez-vous, cela n’est pas mal
+                            vu. On pourrait même dire que c’est traditionnel. À vous, donc, de vous montrer plus malin
+                            que votre interlocuteur !</div>
+                        <div id="carouselExampleControls-4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/pixabay/bazar.jpg" alt="Bazar d'Istanbul">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pixabay/bazar2.jpg" alt="Bazar d'Istanbul">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pixabay/bazar3.jpg" alt="Bazar d'Istanbul">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-5">
+                            <strong> 5.La Tour de Galata</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-5" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">Et si parmi les choses à faire à Istanbul, vous preniez un peu de
+                            hauteur ? C’est en tout cas ce que la Tour de Galata vous propose ! Depuis son toit, vous
+                            bénéficierez d’une vue panoramique sur la ville. À 360°, s’il vous plaît !
+
+                            En cas de beau temps, vous pourriez même apercevoir les îles du Prince. Choisissez-donc bien
+                            votre jour de visite ! Ensuite, flânez dans les rues adjacentes dans lesquelles il est
+                            agréable de déambuler.</div>
+                        <div id="carouselExampleControls-5" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active text-center">
+                                    <img src="photos/pixabay/galata1.jpg" alt="La tour de Galata">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pexels-galata-6557203.jpg" alt="La tour de Galata">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/galata-tower-g7ec81036b_640.jpg" alt="La tour de Galata">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-6">
+                            <strong>6. La Mosquée Bleue</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-6" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">La mosquée Sultanahmet Camii est moins célèbre que les
+                            incontournables précédents. Pourtant, ses mosaïques de couleur bleu (d’où son surnom)
+                            attirent les touristes du monde entier. N’oublions pas non plus l’imposante façade, qui
+                            impressionnent les visiteurs dès leur arrivée.
+
+                            La visite de la Mosquée Bleue est donc une excellente idée. Néanmoins, vous n’êtes pas les
+                            seuls à vouloir y pénétrer. C’est pourquoi nous vous conseillons d’arriver tôt le matin.
+                        </div>
+                        <div id="carouselExampleControls-6" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/sultan-ahmed.jpg" alt="La mosquée bleue">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pexels-mosquee-bleue.jpg" alt="La mosquée bleue">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/pexels-sultan-ahmet.jpg" alt="La mosquée bleue">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-7">
+                            <strong>7. Le Palais de Dolmabahçe</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-7" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">De toutes les choses à faire à Istanbul, le Palais de Dolmabahçe a
+                            certainement l’histoire la plus improbable. En effet, cette résidence voit le jour en 1856
+                            sous l’impulsion du sultan Abdülmecit Ier. La raison ? Essentiellement pour prouver que
+                            l’Empire ottoman, alors en déclin, allait en fait très bien.
+
+                            Oui, ce palais qui aura coûté l’équivalent de 35 tonnes d’or est en quelque sorte un coup de
+                            communication. Un peu cher payé ! Mais bon, cela vous permettra d’y voir un splendide lustre
+                            en cristal de Bohême, pesant 4,5 tonnes.</div>
+                        <div id="carouselExampleControls-7" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner  text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/dom.jpg" alt="Le Palais de Dolmabahçe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/dom2.jpg" alt="Le Palais de Dolmabahçe">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/dom3.jpg" alt="Le Palais de Dolmabahçe">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-8">
+                            <strong> 8.La Citerne Basilique</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-8" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">Istanbul n’est pas seulement fascinante à la surface : elle l’est
+                            aussi sous terre. La Citerne Basilique est une magnifique pièce de l’ingéniosité byzantine.
+                            Cette citerne souterraine spectaculaire avait pour mission de stocker l’eau potable,
+                            apportée des aqueducs. L’eau était parfois ramenée depuis l’actuelle Bulgarie.
+
+                            Avec sa lumière tamisée et la musique classique ajoutée au bruit de fond des gouttes d’eau,
+                            certains considèrent l’endroit comme romantique. Pour d’autres, la Citerne Basilique est un
+                            peu effrayante.</div>
+                        <div id="carouselExampleControls-8" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/citerne.jpg" alt="La Citerne Basilique">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/citerne2.jpg" alt="La Citerne Basilique">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/citerne3.jpg" alt="La Citerne Basilique">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-8" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-8" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-9">
+                            <strong>9. La Place Taksim</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-9" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">En raison de la grande importance de cette place dans l'hitoire de
+                            la ville,
+                            c'est le lieu de prédilection pour organiser des événements publics et les célébrations
+                            sociales.
+                            Elle est aussi connue pour avoir été le point de départ de différentes manifestations
+                            politiques,
+                            qui se sont souvent terminées dans la violence.
+                            Depuis la place part une des principales artères commerciales de la ville,
+                            Istiklal Caddesi (Avenue de l'Indépendence), une agréable rue piétonne que
+                            l'on peut traverser à l'aide du tramway nostalgique qui conduit au funiculaire de Tünel.
+                        </div>
+                        <div id="carouselExampleControls-9" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/taksim.jpg" alt="La Place Taksim">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/taksim2.jpg" alt="La Place Taksim">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/taksim3.jpg" alt="La Place Taksim">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-9" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-9" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bloc-10">
+                            <strong>10. La gastronomie stambouliote et ses marchés</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-10" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">La cuisine turque est parmi les plus riches de toutes,
+                            mélangeant saveurs de différents continents et cultures.
+                            Tous ces plats sont préparés avec des produits frais dont vous pouvez même acheter
+                            vous-même.
+                            Pour cela, prenez la direction des marchés citadins (appelés pazar). S’ils ne paient pas de
+                            mine,
+                            vous pouvez être sûr que vous recevrez un accueil chaleureux de la part des marchands..
+                            Parmis les restaurants célébres à Isanbul, "Almadina restaurant" Très connu grâce au chef
+                            <a href="https://www.almadinarestaurant.com/tr/" class="link"><strong>« Burak »</strong>
+
+                            </a>,
+                            l’ami des stars comme ils l ‘appellent les turque.
+                            Des plats excellents pour des prix abordables. Une expérience unique et à ne pas rater !
+
+                        </div>
+                        <div id="carouselExampleControls-10" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-4">
+                                <div class="carousel-item active">
+                                    <img src="photos/nourriture/burak1.jpg" alt="Gastronomie turque">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/nourriture/burak2.jpg" alt="Gastronomie turque">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/nourriture/burak3.jpg" alt="Gastronomie turque">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-10" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-10" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 11 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-bg-warning" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#bloc-11">
+                            <strong> Un petit bonus!</strong>
+                        </button>
+                    </h2>
+                    <div id="bloc-11" class="accordion-collapse collapse" data-bs-parent="#blocs">
+                        <div class="accordion-body">D'abord rendue célébre grâce au feuilleton turque "Aski Memnu"
+                            (amour intérdit),
+                            La Maison Vehbi Koç, transformée en espace d'exposition permanent, est au service de la
+                            culture et des arts
+                            La Vehbi Koç House a ouvert ses portes aux visiteurs en septembre 2018 avec une exposition
+                            spéciale. Une sélection de la collection
+                            de tapis offerte à la Fondation Vehbi Koç en 2007 par Josephine Powell, photographe et
+                            collectionneuse américaine considérée comme l'une
+                            des dernières voyageuses d'Anatolie, est exposée à la Vehbi Koç Büyükdere House.
+                        </div>
+
+                        <div id="carouselExampleControls-11" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center mb-5">
+                                <div class="carousel-item active">
+                                    <img src="photos/villa.jpg" alt="villa célébre">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/villa2.jpg" alt="villa célébre">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="photos/villa3.jpg" alt="villa célébre">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls-11" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls-11" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="p-5 mt-5  bg-dark text-white text-center position-relative">
+        <div class="container">
+            <h3 class="lead">Copyright &copy; 2023 Istanbul</h3>
+            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+            <a href="#"><i class="bi bi-github text-light mx-1"></i></a>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

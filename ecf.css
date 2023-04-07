@@ -1,0 +1,118 @@
+/* ajuster le body et créer un espace entre la navbar et le contenu de la page */
+
+body {
+    background: rgb(33, 37, 41);
+    height: 100vh;
+    font: sans-serif;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 5vh;
+
+}
+
+/* fin du body */
+
+/* syle pour le coeur rouge Istanbul */
+#heart {
+    color: red;
+}
+
+/* fin style coeur */
+
+
+.text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* justifier le text au niveau des caroussels, page Aventures */
+#blocs {     
+    text-align: justify;
+    text-justify: inter-word;
+}
+.text-light {
+    margin-top: 20vh;
+    text-align: justify;
+    text-justify: inter-word;
+
+}  
+
+/* style pour la page formulaire */
+.formulaire {
+    padding: 5%;
+
+    justify-content: center;
+    display: flex;
+}
+
+.login {
+    width: 700px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: url(photos/form.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.shad {
+    text-shadow: 2px 2px #adb144;
+}
+
+/* fin de stule du formulaire */
+
+
+/* sttyle images des caroussels. page Aventures */
+.carousel-inner img {
+    max-height: 70vh;
+
+}
+
+
+
+/* style bouton accordéon . page Aventures */
+
+.accordion-button {
+    background-color: rgba(174, 174, 171, 0.551);
+
+}
+
+
+/* style dropdown,menu "info utiles" */
+.dropdown-item {
+    background-color: #f8f9fa;
+    color: #ffc107;
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+
+}
