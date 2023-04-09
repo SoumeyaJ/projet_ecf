@@ -34,7 +34,6 @@ body::before {
     text-justify: inter-word;
 }
 .text-light {
-    margin-top: 20vh;
     text-align: justify;
     text-justify: inter-word;
 
