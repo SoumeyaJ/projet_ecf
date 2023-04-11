@@ -1,142 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exchange Rate Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <img src="img/money.png" alt="" class="money-img" />
-    <h1>Exchange Rate Calculator</h1>
-    <p>Choose the currency and the amounts to get the exchange rate</p>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ecf.css">
+    <title>Istanbul</title>
+</head>
+<body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+            <div class="container">
+                <a href="ecf.html" class="navbar-brand"><strong><span>Mon voyage à Istanbul...
+                            <i class="fa fa-heart text-danger"></i></span></strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="histoire.html" class="nav-link">Histoire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aventures.html" class="nav-link">Aventures</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="info_utiles.html" target="_blank" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Info Utiles </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="change.html" target="_blank">Monnaie d'Istanbul</a></li>
+                                <li><a class="dropdown-item" href="api.html" target="_blank">Météo Istanbul</a></li>
+                                <li><a class="dropdown-item" href="https://thebyzantiumhotel.com/" target="_blank">Où se loger </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mentions_legales.html" class="nav-link">Mentions légales</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    <!-- fin Navbar -->
+
+<!-- Page d'accueil -->
+
+<div class="container-fluid bg-dark mt-5">
+<section class="bg-dark text-light text-center p-5">
     <div class="container">
-      <div class="currency">
-        <select id="currency-one">
-          <option value="AED">AED</option>
-          <option value="ARS">ARS</option>
-          <option value="AUD">AUD</option>
-          <option value="BGN">BGN</option>
-          <option value="BRL">BRL</option>
-          <option value="BSD">BSD</option>
-          <option value="CAD">CAD</option>
-          <option value="CHF">CHF</option>
-          <option value="CLP">CLP</option>
-          <option value="CNY">CNY</option>
-          <option value="COP">COP</option>
-          <option value="CZK">CZK</option>
-          <option value="DKK">DKK</option>
-          <option value="DOP">DOP</option>
-          <option value="EGP">EGP</option>
-          <option value="EUR">EUR</option>
-          <option value="FJD">FJD</option>
-          <option value="GBP">GBP</option>
-          <option value="GTQ">GTQ</option>
-          <option value="HKD">HKD</option>
-          <option value="HRK">HRK</option>
-          <option value="HUF">HUF</option>
-          <option value="IDR">IDR</option>
-          <option value="ILS">ILS</option>
-          <option value="INR">INR</option>
-          <option value="ISK">ISK</option>
-          <option value="JPY">JPY</option>
-          <option value="KRW">KRW</option>
-          <option value="KZT">KZT</option>
-          <option value="MXN">MXN</option>
-          <option value="MYR">MYR</option>
-          <option value="NOK">NOK</option>
-          <option value="NZD">NZD</option>
-          <option value="PAB">PAB</option>
-          <option value="PEN">PEN</option>
-          <option value="PHP">PHP</option>
-          <option value="PKR">PKR</option>
-          <option value="PLN">PLN</option>
-          <option value="PYG">PYG</option>
-          <option value="RON">RON</option>
-          <option value="RUB">RUB</option>
-          <option value="SAR">SAR</option>
-          <option value="SEK">SEK</option>
-          <option value="SGD">SGD</option>
-          <option value="THB">THB</option>
-          <option value="TRY">TRY</option>
-          <option value="TWD">TWD</option>
-          <option value="UAH">UAH</option>
-          <option value="USD" selected>USD</option>
-          <option value="UYU">UYU</option>
-          <option value="VND">VND</option>
-          <option value="ZAR">ZAR</option>
-        </select>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
-      </div>
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Des vacances à <span class="text-warning">Istanbul...</span><i class="fa fa-heart text-danger"></i></h1>
+                <p class="lead my-4">“Si je n’avais qu’un seul regard à poser sur le monde, ce serait sur <strong>Istanbul</strong> ”.</p>
 
-      <div class="swap-rate-container">
-        <button class="btn" id="swap">
-          Swap
-        </button>
-        <div class="rate" id="rate"></div>
-      </div>
+                     <h5>Alphonse de Lamartine</h5>
+                
+                     <a href="histoire.html" class="btn btn-warning mt-3 ">
+                        <i class="bi bi-chevron-right"></i> <strong>Voir plus</strong>
+                    </a>
+            </div>
+          
+              <iframe class="w-50 d-none d-sm-block" width="200" height="400" 
+              src="https://www.youtube.com/embed/u5UIU55Ctoo" title="YouTube video player" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+</div> 
 
-      <div class="currency">
-        <select id="currency-two">
-          <option value="AED">AED</option>
-          <option value="ARS">ARS</option>
-          <option value="AUD">AUD</option>
-          <option value="BGN">BGN</option>
-          <option value="BRL">BRL</option>
-          <option value="BSD">BSD</option>
-          <option value="CAD">CAD</option>
-          <option value="CHF">CHF</option>
-          <option value="CLP">CLP</option>
-          <option value="CNY">CNY</option>
-          <option value="COP">COP</option>
-          <option value="CZK">CZK</option>
-          <option value="DKK">DKK</option>
-          <option value="DOP">DOP</option>
-          <option value="EGP">EGP</option>
-          <option value="EUR" selected>EUR</option>
-          <option value="FJD">FJD</option>
-          <option value="GBP">GBP</option>
-          <option value="GTQ">GTQ</option>
-          <option value="HKD">HKD</option>
-          <option value="HRK">HRK</option>
-          <option value="HUF">HUF</option>
-          <option value="IDR">IDR</option>
-          <option value="ILS">ILS</option>
-          <option value="INR">INR</option>
-          <option value="ISK">ISK</option>
-          <option value="JPY">JPY</option>
-          <option value="KRW">KRW</option>
-          <option value="KZT">KZT</option>
-          <option value="MXN">MXN</option>
-          <option value="MYR">MYR</option>
-          <option value="NOK">NOK</option>
-          <option value="NZD">NZD</option>
-          <option value="PAB">PAB</option>
-          <option value="PEN">PEN</option>
-          <option value="PHP">PHP</option>
-          <option value="PKR">PKR</option>
-          <option value="PLN">PLN</option>
-          <option value="PYG">PYG</option>
-          <option value="RON">RON</option>
-          <option value="RUB">RUB</option>
-          <option value="SAR">SAR</option>
-          <option value="SEK">SEK</option>
-          <option value="SGD">SGD</option>
-          <option value="THB">THB</option>
-          <option value="TRY">TRY</option>
-          <option value="TWD">TWD</option>
-          <option value="UAH">UAH</option>
-          <option value="USD">USD</option>
-          <option value="UYU">UYU</option>
-          <option value="VND">VND</option>
-          <option value="ZAR">ZAR</option>
-        </select>
-        <input type="number" id="amount-two" placeholder="0" />
-      </div>
+<footer class="p-5 mt-5  bg-dark text-white text-center position-relative">
+    <div class="container" id="icons">
+        <p class="lead">Copyright &copy; 2023 Istanbul</p>
+        <a href="#icons"><i class="bi bi-twitter text-light mx-1"></i></a>
+        <a href="#icons"><i class="bi bi-facebook text-light mx-1"></i></a>
+        <a href="#icons"><i class="bi bi-linkedin text-light mx-1"></i></a>
+        <a href="#icons"><i class="bi bi-instagram text-light mx-1"></i></a>
+        <a href="#icons"><i class="bi bi-github text-light mx-1"></i></a>
+        <a href="#icons" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+
     </div>
 
-    <script src="change.js"></script>
-  </body>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="ecf.js"></script>
+</body>
 </html>
